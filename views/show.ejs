@@ -1,0 +1,22 @@
+<%- include ('./partials/header') %>
+<div class="jumbotron">
+    <h1> show page</h1>
+</div>
+<div class="container-fluid">
+
+    <ul class="list-group">
+        <li class="list-group-item"><b>user name : </b> <span><%= user.username %></span></li>
+
+        <li class="list-group-item"><b>email : </b> <span><%= user.email %></span></li>
+        
+        <li class="list-group-item"><b>hobby : </b> <span><%= user.hobby %></span></li>
+
+        <li class="list-group-item"><b>date of birth : </b> <span><%= user.dob %></span></li>
+
+        <li class="list-group-item"><b>location : </b> <span><%= user.location %></span></li>
+      </ul>
+</div>
+<div class="container">
+    <a href="/login" class="bt btn-light">logout</a>
+</div>
+<%- include ('./partials/footer') %>
